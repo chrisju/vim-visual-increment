@@ -46,10 +46,10 @@ vnoremap <silent> <Plug>VisualIncrement :<C-U>call <SID>doincrement(v:count1)<CR
 vnoremap <silent> <Plug>VisualDecrement :<C-U>call <SID>doincrement(v:count1, 1)<CR>
 
 if !hasmapto("<Plug>VisualIncrement")
-  vmap <C-A>  <Plug>VisualIncrement
+  vmap :I  <Plug>VisualIncrement
 endif
 if !hasmapto("<Plug>VisualDecrement")
-  vmap <C-X>  <Plug>VisualDecrement
+  vmap :D  <Plug>VisualDecrement
 endif
 
 let &cpo = s:cpo_save
